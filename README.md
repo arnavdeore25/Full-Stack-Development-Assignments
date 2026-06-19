@@ -1,3 +1,5 @@
-The objective of this project is to demonstrate the implementation of a basic SPA using HTML and CSS while applying concepts such as page layout, navigation, forms, tables, cards and adding css using selector such as class, id etc.
+This repository contains all the lab assignmenets of full stack development course.
 
-Submitted by: Arnav Deore
+Submitted by
+Arnav Deore
+MCA Student at Christ University.
