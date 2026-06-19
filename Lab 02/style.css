@@ -1,0 +1,154 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+header{
+    background-color: gold;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+nav{
+    background-color: lightgray;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a{
+    text-decoration: none;
+    color: darkblue;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: darkred;
+}
+
+section{
+    background-color: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.heading{
+    text-align: center;
+    color: gold;
+}
+.landing{
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+}
+
+
+.btn{
+    display: inline-block;
+    background-color: gold;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn:hover{
+    background-color: yellow;
+}
+
+.about-box{
+    background-color: rgba(255, 255, 0, 0.067);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.resource-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.resource-card{
+    background-color: rgba(255, 255, 0, 0.067);
+    border: 1px solid silver;
+    border-radius: 14px;
+    padding: 23px;
+    text-align: center;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.resource-card:hover{
+    background-color: lightcyan;
+}
+
+
+.testimonial-container{
+    text-align: center;
+}
+
+.card{
+    display: inline-block;
+    width: 40%;
+    margin: 10px;
+    padding: 15px;
+    background-color: rgba(255, 255, 0, 0.067);
+    border: 1px solid silver;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+.card:hover{
+    background-color: lightcyan;
+}
+
+form{
+    background-color: rgba(255, 255, 0, 0.067);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+input,
+textarea{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+input:focus,
+textarea:focus{
+    background-color: lightyellow;
+}
+
+input[type="submit"]{
+    background-color: gold;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: navy;
+}
+
+img{
+    height: 600px;
+    width: auto;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
