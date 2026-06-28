@@ -1,0 +1,99 @@
+
+body.dark-mode{
+    background:#0f172a;
+    color:#f1f5f9;
+    transition:0.3s ease;
+}
+
+body.dark-mode header{
+    background:#1e293b !important;
+    color:white !important;
+}
+
+body.dark-mode .logo{
+    color:#60a5fa !important;
+}
+
+body.dark-mode .nav-links a{
+    color:#e2e8f0 !important;
+}
+
+body.dark-mode .nav-links a:hover{
+    color:#60a5fa !important;
+}
+
+body.dark-mode section{ 
+    background: linear-gradient(to right, #1f2937, #111827) !important;
+}
+
+body.dark-mode h2{
+    color:white !important;
+}
+
+body.dark-mode p{
+    color:#cbd5e1 !important;
+}
+
+body.dark-mode form{
+
+    background:#1a2434 !important;
+
+}
+
+body.dark-mode label{
+    color:#e2e8f0 !important;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select{
+
+    background:#334155;
+    color:white;
+    border:1px solid #475569;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder{
+    color:#cbd5e1;
+}
+
+body.dark-mode input[type="file"]{
+    background:#334155 !important;
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus,
+body.dark-mode select:focus{
+    outline:none;
+    border-color:#60a5fa;
+}
+
+body.dark-mode .bg-blue-600{
+
+    background:#2563eb !important;
+}
+
+body.dark-mode .bg-blue-600:hover{
+
+    background:#1d4ed8 !important;
+}
+
+body.dark-mode .bg-gray-600{
+
+    background:#475569 !important;
+}
+
+body.dark-mode .bg-gray-600:hover{
+
+    background:#64748b !important;
+}
+
+body.dark-mode #student-card > div{
+
+    background:#1e293b;
+
+    color:white;
+
+    border:1px solid #334155;
+}
