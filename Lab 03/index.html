@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Study System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800 transition-colors duration-300">
+
+    <header class="bg-white text-gray-800 shadow-md">
+        <nav class="nav-container">
+            <div class="logo font-bold text-blue-600">Self Study System</div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="hover:text-blue-600">Home</a></li>
+                <li><a href="#todo" class="hover:text-blue-600">To-Do List</a></li>
+                <li><a href="#resources" class="hover:text-blue-600">Resourses</a></li>
+                <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+                <li><a href="registeration.html" class="hover:text-blue-600">Registeration</a></li>
+                
+            </ul>
+            <button id="theme-toggle" class="bg-blue-600 text-white hover:bg-blue-700">
+                Change Theme
+            </button>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="hero-content">
+            <h1 class="text-gray-900">Learn Smarter, Study Better</h1>
+            <p class="text-gray-600">Organize your study sessions, track tasks, and stay productive.</p>
+            <div class="img-flex">
+                <img src="01.png" alt="">
+                <img src="02.png" alt="">
+                <img src="03.png" alt="">
+            </div>
+            <a href="#todo" class="hero-btn bg-blue-600 text-white hover:bg-blue-700">Get Started</a>
+        </div>
+    </section>
+
+    <section id="todo" class="todo-section">
+        <div class="section-container">
+            <h2 class="text-gray-900"><b>To-Do List</b></h2>
+            <p class="section-subtitle text-gray-600">Keep track of your academic objectives</p>
+
+            <form id="todo-form" class="todo-form">
+                <input type="text" id="task-input" class="task-input-focus"
+                    placeholder="Enter a study task (e.g., Read Chapter 3)..." class="bg-white text-gray-800">
+                <button type="submit" class="bg-blue-600 text-white hover:bg-blue-700">Add Task</button>
+            </form>
+
+            <ul id="task-list" class="task-list">
+            </ul>
+        </div>
+    </section>
+    <section id="resources" class="resources-section bg-slate-50">
+        <div class="section-container">
+            <h2 class="text-gray-900">Study Resources</h2>
+            <p class="section-subtitle text-gray-600">Click a link to open curated notes for that subject.</p>
+
+            <div class="resources-grid border-indigo-100">
+
+                <div class="res-header bg-indigo-600 text-white">Subject</div>
+                <div class="res-header bg-indigo-600 text-white">Notes / Reference</div>
+
+                <div class="res-subject bg-white border-indigo-100 hover:bg-indigo-50 text-gray-800">
+                    <span>🐍</span> Python
+                </div>
+                <div class="res-links bg-white border-indigo-100">
+                    <a href="https://docs.python.org/3/tutorial/" target="_blank" rel="noopener" class="text-indigo-600 hover:text-indigo-800">Official Python Tutorial</a>
+                    <a href="https://www.w3schools.com/python/" target="_blank" rel="noopener" class="text-indigo-600 hover:text-indigo-800">W3Schools Python</a>
+                </div>
+
+                <div class="res-subject bg-white border-indigo-100 hover:bg-indigo-50 text-gray-800">
+                    <span>🗄️</span> DBMS
+                </div>
+                <div class="res-links bg-white border-indigo-100">
+                    <a href="https://www.geeksforgeeks.org/dbms/" target="_blank" rel="noopener" class="text-indigo-600 hover:text-indigo-800">GFG — DBMS Notes</a>
+                    <a href="https://www.tutorialspoint.com/dbms/index.htm" target="_blank" rel="noopener" class="text-indigo-600 hover:text-indigo-800">Tutorials Point DBMS</a>
+                </div>
+
+                <div class="res-subject bg-white border-indigo-100 hover:bg-indigo-50 text-gray-800">
+                    <span>🌐</span> Full Stack Development
+                </div>
+                <div class="res-links bg-white border-indigo-100">
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener" class="text-indigo-600 hover:text-indigo-800">MDN Web Docs</a>
+                    <a href="https://www.freecodecamp.org/learn/" target="_blank" rel="noopener" class="text-indigo-600 hover:text-indigo-800">freeCodeCamp</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section bg-gray-100">
+        <div class="section-container">
+            <h2 class="text-gray-900"><b>Contact Us</b></h2>
+            <p class="section-subtitle text-gray-600">Have questions? Reach out to us.</p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name" class="text-gray-700">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" class="bg-white text-gray-800">
+                    <span class="error-message text-red-600" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="text-gray-700">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" class="bg-white text-gray-800">
+                    <span class="error-message text-red-600" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="text-gray-700">Message</label>
+                    <textarea id="message" rows="4" placeholder="Your Message"
+                        class="bg-white text-gray-800"></textarea>
+                    <span class="error-message text-red-600" id="message-error"></span>
+                </div>
+
+                <button type="submit" class="bg-blue-600 text-white hover:bg-blue-700">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="footer-container">
+            <div>
+                <h3 class="text-white">Self Study System</h3>
+                <p>Empowering students to achieve academic excellence.</p>
+            </div>
+            <div>
+                <h4 class="text-white">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#hero" class="hover:text-white">Home</a></li>
+                    <li><a href="#todo" class="hover:text-white">To-Do List</a></li>
+                    <li><a href="#resources" class="hover:text-white">Resourses</a></li>
+                    <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom border-t border-gray-800">
+            <p>&copy; CIA 1B Submitted by Arnav Deore - 2647119.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
