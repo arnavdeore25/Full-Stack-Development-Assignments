@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    background: #f3f4f6;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    transition: 0.3s ease;
+}
+
+#studentForm {
+    width: 100%;
+}
+
+#studentForm label {
+    color: #1f2937;
+    font-size: 16px;
+}
+
+#studentForm input[type="text"],
+#studentForm input[type="email"],
+#studentForm input[type="password"],
+#studentForm input[type="tel"],
+#studentForm input[type="number"],
+#studentForm input[type="date"],
+#studentForm select,
+#studentForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 48px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 16px;
+    background: white;
+}
+
+#studentForm input:focus,
+#studentForm select:focus,
+#studentForm textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+#studentForm input[type="radio"],
+#studentForm input[type="checkbox"] {
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+.gender-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    min-height: 48px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+}
+
+#address {
+    min-height: 120px !important;
+    resize: vertical;
+}
+
+#submitBtn,
+#cancelBtn {
+    min-width: 140px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#studentList > div {
+    height: 100%;
+}
+
+body.dark-mode {
+    background: #0f172a;
+    color: #f1f5f9;
+}
+
+body.dark-mode header {
+    background: #1e293b !important;
+    color: white !important;
+}
+
+body.dark-mode .logo {
+    color: #60a5fa !important;
+}
+
+body.dark-mode .nav-links a {
+    color: #e2e8f0 !important;
+}
+
+body.dark-mode .nav-links a:hover {
+    color: #60a5fa !important;
+}
+
+body.dark-mode h1 {
+    color: #60a5fa !important;
+}
+
+body.dark-mode .bg-white.shadow-md.rounded-lg {
+    background: #1e293b !important;
+    color: #f1f5f9 !important;
+}
+
+body.dark-mode #studentForm {
+    color: #f1f5f9;
+}
+
+body.dark-mode #studentForm label {
+    color: #e2e8f0 !important;
+}
+
+body.dark-mode #studentForm input[type="text"],
+body.dark-mode #studentForm input[type="email"],
+body.dark-mode #studentForm input[type="password"],
+body.dark-mode #studentForm input[type="tel"],
+body.dark-mode #studentForm input[type="number"],
+body.dark-mode #studentForm input[type="date"],
+body.dark-mode #studentForm select,
+body.dark-mode #studentForm textarea {
+    background: #334155 !important;
+    color: #f8fafc !important;
+    border: 1px solid #475569 !important;
+}
+
+body.dark-mode #studentForm input::placeholder,
+body.dark-mode #studentForm textarea::placeholder {
+    color: #cbd5e1 !important;
+}
+
+body.dark-mode #studentForm input:focus,
+body.dark-mode #studentForm select:focus,
+body.dark-mode #studentForm textarea:focus {
+    outline: none;
+    border-color: #60a5fa !important;
+    box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.2);
+}
+
+body.dark-mode #studentForm input[type="date"] {
+    color-scheme: dark;
+}
+
+body.dark-mode #studentForm input[type="radio"],
+body.dark-mode #studentForm input[type="checkbox"] {
+    accent-color: #60a5fa;
+}
+
+body.dark-mode .gender-container,
+body.dark-mode .skills-container {
+    color: #e2e8f0;
+}
+
+body.dark-mode #submitBtn {
+    background: #2563eb !important;
+    color: white !important;
+}
+
+body.dark-mode #submitBtn:hover {
+    background: #1d4ed8 !important;
+}
+
+body.dark-mode #cancelBtn {
+    background: #475569 !important;
+    color: white !important;
+}
+
+body.dark-mode #cancelBtn:hover {
+    background: #64748b !important;
+}
+
+body.dark-mode #studentList {
+    color: #f1f5f9;
+}
+
+body.dark-mode #studentList > div {
+    background: #1e293b !important;
+    color: #e2e8f0 !important;
+    border: 1px solid #334155 !important;
+}
+
+body.dark-mode #studentList h3 {
+    color: #60a5fa !important;
+}
+
+body.dark-mode #studentList p {
+    color: #cbd5e1 !important;
+}
+
+body.dark-mode #studentList strong {
+    color: #f1f5f9 !important;
+}
+
+body.dark-mode #studentList button.bg-yellow-500 {
+    background: #d97706 !important;
+}
+
+body.dark-mode #studentList button.bg-yellow-500:hover {
+    background: #b45309 !important;
+}
+
+body.dark-mode #studentList button.bg-red-500 {
+    background: #dc2626 !important;
+}
+
+body.dark-mode #studentList button.bg-red-500:hover {
+    background: #b91c1c !important;
+}
+
+body.dark-mode #studentForm select option {
+    background: #334155;
+    color: white;
+}
+
+body.dark-mode #studentList .text-gray-500 {
+    color: #94a3b8 !important;
+}
+
+@media (max-width: 768px) {
+    #submitBtn,
+    #cancelBtn {
+        width: 100%;
+    }
+
+    .gender-container {
+        gap: 15px;
+    }
+
+    .skills-container {
+        gap: 15px;
+    }
+}
