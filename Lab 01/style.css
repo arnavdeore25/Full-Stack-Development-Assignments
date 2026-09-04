@@ -1,0 +1,163 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+header{
+    background-color: gold;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+nav{
+    background-color: lightgray;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a{
+    text-decoration: none;
+    color: darkblue;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: darkred;
+}
+
+section{
+    background-color: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.heading{
+    text-align: center;
+    color: gold;
+}
+.landing{
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+}
+
+
+.btn{
+    display: inline-block;
+    background-color: gold;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn:hover{
+    background-color: yellow;
+}
+
+.about-box{
+    background-color: rgba(255, 255, 0, 0.067);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.resource-card{
+    display: inline-block;
+    width: 180px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    background-color: lightyellow;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.resource-card:hover{
+    background-color: khaki;
+}
+
+table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table,th, td{
+    border: 1px solid gray;
+}
+
+th{
+    background-color: rgba(253, 225, 63, 0.374);
+    color: black;
+}
+th a{
+    text-decoration: none;
+    color: black;
+}
+
+th,td{
+    padding: 10px;
+    text-align: center;
+}
+
+td a{
+    text-decoration: none;
+    color: gold;
+}
+
+.testimonial-container{
+    text-align: center;
+}
+
+.card{
+    display: inline-block;
+    width: 40%;
+    margin: 10px;
+    padding: 15px;
+    background-color: rgba(255, 255, 0, 0.067);
+    border: 1px solid silver;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+.card:hover{
+    background-color: lightcyan;
+}
+
+form{
+    background-color: rgba(255, 255, 0, 0.067);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+input,
+textarea{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+input:focus,
+textarea:focus{
+    background-color: lightyellow;
+}
+
+input[type="submit"]{
+    background-color: gold;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: navy;
+}
